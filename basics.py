@@ -143,3 +143,21 @@ elif (b<c<a):
     print(b, c, a)
 '''
 
+# 13. Python program to marksheet
+
+print("enter the marks of all fives subjects")
+a, b, c, d, e = int(input("enter the marks of 1st subject : ")), int(input("enter the marks of 2nd subject : ")), int(input("enter the marks of 3rd subject : ")), int(input("enter the marks of 4th subject : ")), int(input("enter the marks of 5th subject : "))
+if a>=33 and b>=33 and c>=33 and d>=33 and e>=33 :
+    print("you are pass")
+    per=(a+b+c+d+e)/5
+    print("you got ", per,"%")
+    if per>=90:
+        print("and 1st division with destinction")
+    elif per>=60:
+        print("and 1st division")
+    elif per>=50:
+        print("and 2nd division")
+    else :
+        print("and 3rd division")
+else :
+    print("You are fail")

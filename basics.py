@@ -144,7 +144,7 @@ elif (b<c<a):
 '''
 
 # 13. Python program to marksheet
-
+'''
 print("enter the marks of all fives subjects")
 a, b, c, d, e = int(input("enter the marks of 1st subject : ")), int(input("enter the marks of 2nd subject : ")), int(input("enter the marks of 3rd subject : ")), int(input("enter the marks of 4th subject : ")), int(input("enter the marks of 5th subject : "))
 if a>=33 and b>=33 and c>=33 and d>=33 and e>=33 :
@@ -161,3 +161,136 @@ if a>=33 and b>=33 and c>=33 and d>=33 and e>=33 :
         print("and 3rd division")
 else :
     print("You are fail")
+'''
+
+# 14.Print first 10 natural numbers
+'''
+print("the first 10 natural number : ", end='')
+for x in range(1, 11):
+    print(x, end=" ")
+'''
+
+# 15.first 10 natural numbers in reverse order
+'''
+print("the first 10 natural numbers in reverse order : ")
+i=10
+while i>=1:
+    print(i, end=' ')
+    i -= 1
+'''
+
+# 16.Python script to print first 10 odd natural numbers
+'''
+print("first 10 odd natural numbers are : ")
+for i in range (1, 20):
+    if i%2!=0:
+        print(i, end=" ")
+'''
+
+# 17.Python script to print first 10 even natural numbers
+'''
+print("first 10 even natural numbers are : ")
+for i in range (1, 20):
+    if i % 2 == 0:
+        print(i, end=" ")
+'''
+
+# 18.Python script to print first N natural numbers
+'''
+n=int(input("how many first natural numbers you want print : "))
+for x in range (1, n+1):
+    print(x, end=" ")
+'''
+
+# 19.Python script to print first N natural numbers in reverse order
+'''
+n=int(input("how many first natural numbers you want print in reverse order : "))
+while (n>=1):
+    print(n, end=" ")
+    n -= 1
+'''
+
+# 20.Python script to calculate sum of first N natural numbers
+'''
+n = int(input("to calculate sum of first N natural numbers, enter the value of N : "))
+temp=n
+sum=0
+while n>=1:
+    sum=sum+n
+    n -= 1
+print("the sum of first", temp, "natural number is :", sum)
+'''
+
+# 21.sum of first N odd natural numbers
+'''
+n=int(input("enter the value of n : "))
+print("first sum of first", n, "odd natural number is : ", end=" ")
+sum=0
+for i in range (1, n*2):
+    if i%2!=0:
+        sum=sum+i
+print(sum)
+'''
+
+# 22.Python Script to Print Table of 5
+'''
+for i in range(1, 11):
+    print("5 *", i, "=", 5*i)
+'''
+
+# 23.Python Script to print table of user’s choice
+'''
+n=int(input("enter the value of n : "))
+for i in range(1, 11):
+    print(n, "*", i, "=", n*i)
+'''
+
+# 24.Python script to check Prime number
+'''
+n=int(input("enter any number : "))
+if n<2:
+    print(n, "is not a prime number")
+else :
+    for i in range(2, n):
+        if n%i==0:
+            print(n, "is not a prime number")
+            break
+    else:
+        print(n, "is a prime number") 
+'''
+
+# 25.Python script to find next prime number of a given number
+'''
+n=int(input("enter any number : "))
+temp=n
+while True :
+    n += 1
+    for i in range(2, n):
+        if n % i == 0:
+            break
+    else:
+        print("the next prime number after", temp, "is", n)
+        break
+'''
+
+# 26.Python script to print all Armstrong numbers under 1000
+'''
+print("all the armstrongs number between 1 to 1000 are : ")
+for i in range(1, 1000):
+    a=i//100
+    b=(i//10)%10
+    c=i%10
+    sum=(a*a*a) + (b*b*b) + (c*c*c)
+    if sum == i:
+        print(i)
+'''
+
+# 27.python program to take out the factorial of a number
+'''
+n=int(input("enter an number : "))
+prod=1
+for i in range (1, n+1):
+    prod=prod*i
+print("the factorial of", n, "is", prod)
+'''
+
